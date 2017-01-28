@@ -1,6 +1,6 @@
 ## Initialize some stuff
 
-APP_DIR=/vagrant/scripts
+APP_DIR=/vagrant
 
 sudo apt-get update
 
@@ -39,3 +39,7 @@ pip install html5lib
 pip install lxml
 pip install bs4 # BeautifulSoup4
 pip install openpyxl
+pip install ipython[notebook]
+
+## Use this to boot the notebook
+# jupyter notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0 --debug > debug.log 2>&1 &
